@@ -1,0 +1,23 @@
+GIT
+  remote: git@github.com:kitplummer/daemon-kit.git
+  revision: be6953c46805736735502f01407c25451f594fdc
+  specs:
+    daemon-kit (0.1.8.2)
+      eventmachine (>= 0.12.10)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    eventmachine (0.12.10)
+    json (1.5.1)
+    safely (0.3.0)
+    stomp (1.1.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  daemon-kit!
+  json
+  safely
+  stomp
