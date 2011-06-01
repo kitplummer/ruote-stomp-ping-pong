@@ -2,9 +2,9 @@ This is a port of the ruote-amqp-ping-pong investigation:
 
 https://github.com/coffeeaddict/ruote-amqp-ping-pong
 
-but using Stomp instead of AMQP.  I'm also referencing my git fork of
+but using Stomp instead of AMQP.  I'm also referencing my git fork (https://github.com/kitplummer/daemon-kit) of
 Daemon-Kit which has the ruote_stomp functionality in it.  The example
-engine app, references my ruote-stomp library (via git)
+engine app, references my ruote-stomp (https://github.com/kitplummer/ruote-stomp) library (via git)
 
 == Demonstration
 
