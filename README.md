@@ -2,20 +2,39 @@ This is a port of the ruote-amqp-ping-pong investigation:
 
 https://github.com/coffeeaddict/ruote-amqp-ping-pong
 
-but using Stomp instead of AMQP.
+but using Stomp instead of AMQP.  I'm also referencing my git fork of
+Daemon-Kit which has the ruote_stomp functionality in it.  The example
+engine app, references my ruote-stomp library (via git)
 
-Clone this project.
+== Demonstration
 
-Open a 3 terminal windows and cd into each subdirectory [ping/, pong,
+1. Clone this project.
+
+
+2. Open 3 terminal windows and cd into each project subdirectory [ping/, pong/,
 ping-pong-engine/].
 
-In each terminal window run 'bundle', to fetch the gem dependencies.
+3. Ping
 
-From ping/, run 'bin/ping'
+```sh
+➜  ping bundle
+➜  ping bin/ping
+```
 
-From pong/, run 'bin/pong'
+4. Pong
 
-From ping-pong-engine/, run 'stompserver &', then run 'ruby lib/main.rb'
+```sh
+➜  pong bundle
+➜  pong bin/pong
+```
+
+5. Ping-Pong-Engine
+
+```sh
+➜  ping-pong-engine bundle
+➜  ping-pong-engine stompserver &
+➜  ping-pong-engine ruby lib/main.rb
+```
 
 That's it - you should see the 'app run, and the ping and pong workers
 do their thing - over Stomp.
