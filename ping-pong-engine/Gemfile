@@ -3,7 +3,7 @@ source "http://rubygems.org"
 gem 'daemon-kit', :git => "git@github.com:kitplummer/daemon-kit.git"
 gem 'safely'
 gem 'ruote' 
-gem 'ruote-stomp', :git => "git@github.com:kitplummer/ruote-stomp.git"
+gem 'ruote-stomp', :git => "git@github.com:maestrodev/ruote-stomp.git"
 gem 'rspec'
 gem 'eventmachine'
 gem 'json'
